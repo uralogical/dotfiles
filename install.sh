@@ -1,4 +1,10 @@
 #!/bin/bash
 
-ln -s .vimrc ~/.vimrc
-ln -s .zshrc ~/.zshrc
+for f in .??*
+do
+    [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".DS_Store" ]] && continue
+
+    echo "$f"
+    ln -snfv "$f" "$HOME"/"$f"
+done
