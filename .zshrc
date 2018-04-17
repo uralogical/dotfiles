@@ -51,13 +51,6 @@ esac
 
 alias ll="ls -la"
 alias halt="vagrant halt"
-alias cactus="cd ~/home/work/cactus/"
-alias laclos="cd ~/home/work/laclos/"
-alias midnight="cd ~/home/work/midnight/"
-alias harmonia="cd ~/home/work/harmonia/"
-alias ssh=~/ssh-change-prompt.sh
-alias tweet="python ~/Desktop/tweepy/post.py $@ "
-alias tl="python ~/Desktop/tweepy/main.py"
 
 ## node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
