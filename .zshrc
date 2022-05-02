@@ -50,6 +50,7 @@ case ${UID} in
 esac
 
 alias ll="ls -la"
+alias lgtm="f=\$(ls /opt/homebrew/Cellar/figlet/2.2.5/share/figlet/fonts/*.flf | shuf -n1) && basename \$f .flf && echo -n -e '\n' && figlet -f \$f -w 400 LGTM | tee >(pbcopy)"
 
 ## node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
