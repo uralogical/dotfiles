@@ -50,14 +50,6 @@ case ${UID} in
 esac
 
 alias ll="ls -la"
-alias halt="vagrant halt"
 
 ## node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
-
-## rbenv
-export PATH="$HOME/.rbenv/bin:$PATH"
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-## android
-export PATH=$PATH:/Users/seattle/Library/Android/sdk/platform-tools
