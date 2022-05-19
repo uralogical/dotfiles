@@ -29,6 +29,7 @@ done
 
 # CUI app
 formulas=(
+    ffmpeg
     gh
     ghq
     git

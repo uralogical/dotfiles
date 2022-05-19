@@ -1,0 +1,6 @@
+#!/bin/bash
+fileName=`basename $1`
+name=${fileName%.*}
+
+ffmpeg -i $1 -r 10 ~/Desktop/$name.gif
+echo "Saved to desktop."
