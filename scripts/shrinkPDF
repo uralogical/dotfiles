@@ -1,0 +1,6 @@
+#!/bin/bash
+fileName=`basename $1`
+name=${fileName%.*}
+
+gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/ebook -dNOPAUSE -dQUIET -dBATCH -sOutputFile=${name}.min.pdf $1
+echo "Saved to desktop."
