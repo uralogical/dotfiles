@@ -1,6 +1,4 @@
 echo "loaded .zshrc"
-## Env
-#Lang
 
 ## 補完設定
 autoload -U compinit
@@ -25,7 +23,7 @@ setopt share_history        # share command history data
 autoload history-search-end
 zle -N history-beginning-search-backward-end history-search-end
 zle -N history-beginning-search-forward-end history-search-end
-bindkey "^P" history-beginning-search-backward-end
+bindkey "^[" history-beginning-search-backward-end
 bindkey "^N" history-beginning-search-forward-end
 
 ## Prompt
@@ -55,3 +53,5 @@ alias lgtm="f=\$(ls /opt/homebrew/Cellar/figlet/2.2.5/share/figlet/fonts/*.flf |
 ## export PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=$PATH:$HOME/dotfiles/scripts
+
+eval "$(starship init zsh)"
