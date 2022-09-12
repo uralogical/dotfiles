@@ -47,6 +47,7 @@ for formula in "${formulas[@]}"; do
 done
 
 # install node
+mkdir -p ~/.nodebrew/src
 nodebrew install-binary 16.14.2
 nodebrew use 16.14.2
 node -v
